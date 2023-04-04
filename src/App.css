@@ -1,0 +1,157 @@
+#mainContainer {
+    width: 100%;
+    height: 735px;
+    background-color: black;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.first {
+    width: 40%;
+    height: 735px;
+    box-sizing: border-box;
+    background-color: rgb(27, 25, 25);
+}
+
+.second {
+    width: 60%;
+    height: 735px;
+    box-sizing: border-box;
+}
+
+.logo {
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    left: 100px;
+    top: 40px;
+    color: white;
+    font-family: 'Jost', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 45px;
+}
+
+.Verification {
+    color: white;
+    margin-left: 100px;
+    margin-top: 220px;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.smsblock {
+    margin-top: 70px;
+    margin-left: 100px;
+}
+
+.otp {
+    color: rgb(192, 188, 188);
+}
+
+.senton {
+    color: rgb(90, 89, 89);
+    margin-left: 70px;
+}
+
+.inputfield {
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    width: 60px;
+    height: 50px;
+    margin-left: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 13px;
+}
+
+.inputdiv {
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+.Enterdiv {
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+.wrong {
+    color: #FFFFFFD1;
+}
+
+.reenter {
+    color: #BD61EC;
+}
+
+.btn {
+    position: absolute;
+    width: 280px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 100px;
+    background: linear-gradient(94.62deg, #F76F47 2.55%, #BD61EC 98.64%);
+    border-radius: 13px;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.goback {
+    position: absolute;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 230px;
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.pic1 {
+    position: absolute;
+    width: 750px;
+    height: 650px;
+    margin-left: 120px;
+    margin-top: 130px;
+}
+
+.pic2 {
+    position: absolute;
+    width: 500px;
+    height: 450px;
+    margin-left: 368px;
+    margin-top: 285px;
+}
+
+
+@media screen and (max-width: 400px) {
+    .first {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .second {
+        display: none;
+    }
+
+    .verification {
+        margin-bottom: 50px;
+    }
+
+    .inputfield {
+        width: 50px;
+    }
+
+    .senton {
+        margin-left: 25px;
+    }
+
+    .btn{
+        width: 240px;
+    }
+
+}
