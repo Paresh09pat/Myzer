@@ -4,15 +4,15 @@ import React, { useRef, useState } from 'react'
 function Comp1() {
     
     const [number, setNumber] = useState(["", "", "", ""])
-    const inputNumber = useRef([])
+    const inputOtp = useRef([])
 
     const InputChange = (i, e) => {
         const value = e.target.value;
         const newOtp = [...number];
         newOtp[i] = value;
-        setOtp(newOtp);
+        setNumber(newOtp);
         if (i < number.length - 1 && value) {
-            inputNumber.current[i + 1].focus();
+            inputOtp.current[i + 1].focus();
         }
     };
 
@@ -23,7 +23,7 @@ function Comp1() {
         for (let i = 0; i < pasteOtp.length; i++) {
             newOtp[i] = pasteOtp[i];
             if (i < number.length - 1) {
-                inputNumber.current[i + 1].focus();
+                inputOtp.current[i + 1].focus();
             }
         }
         setNumber(newOtp);
@@ -60,7 +60,7 @@ function Comp1() {
                                 value={value}
                                 onChange={(event) => InputChange(inx, event)}
                                 onPaste={handleInput}
-                                ref={(e) => (inputNumber.current[inx] = e)}
+                                ref={(e) => (inputOtp.current[inx] = e)}
                                 className='inputfield'
                             />
                         ))}
